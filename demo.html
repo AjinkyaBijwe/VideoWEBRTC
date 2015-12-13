@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<html>
+
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/alice:n4:default.js" type="text/javascript"></script>
+<head>
+    <title>Self Desturct Chat</title>
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="./css/stylesdemo.css">
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/elrumordelaluz/csshake/master/csshake.min.css">
+</head>
+
+<body style="background-color: transparent;">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="#">VideoWEB RTC</a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="defaultNavbar1">
+      <ul class="nav navbar-nav">
+
+        <li><a href="javascript:window.open('','_self').close();">Home</a></li>
+        <li class="active"><a href="Demo.html">Secured Chat<span class="sr-only">(current)</span></a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+      <?php include('_footer.php'); ?>
+    <a href="index.php?logout"> <button type="button" class="btn btn-info">Logout</button></a>
+    <a href="edit.php">
+    <button type="button" class="btn btn-warning">Edit Data</button></a>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+<!-- Sidebar -->
+</div>
+    <!-- jQuery -->
+<script src="js/jquery2.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min2.js"></script>
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    <div>
+        <div class="container">
+          <p>Secure Chat With Self Destruct Pick Username to Begin</p>
+      <p></div>
+        <div id="login" style="width: 888px; background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,1.00) 71.50%,rgba(255,0,0,1.00) 100%); background-image: -moz-linear-gradient(270deg,rgba(0,0,0,1.00) 71.50%,rgba(255,0,0,1.00) 100%); background-image: -o-linear-gradient(270deg,rgba(0,0,0,1.00) 71.50%,rgba(255,0,0,1.00) 100%); background-image: linear-gradient(180deg,rgba(0,0,0,1.00) 71.50%,rgba(255,0,0,1.00) 100%);">
+          
+          <div id="question">Username:</div>
+          <div contenteditable="true" id="username"></div>
+        </div>
+    
+
+
+        <div id="dogechat">
+            <div id="dogeusers">
+                <h4>User List</h4>
+                <div id="filter" contenteditable="true"></div>
+                <div id="userList"></div>
+            </div>
+
+            <div id="dogemessages">
+                <div id="messages"></div>
+                <div id="input">
+                    <div contenteditable="true" id="myMessage"></div>
+                    <div contenteditable="true" id="TTL">15</div>
+                    <div id="ttlEx"><strong>Seconds to Deletion</strong></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://cdn.pubnub.com/pubnub.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="./js/libs/cryptico.js"></script>
+    <script src="./js/babel.js"></script>
+    <script src="./js/babel-ui.js"></script>
+    <script src="./js/explode.js"></script>
+    <script>
+        var greyFilter = '<span style="color: LightGray;">Filter by Name</span>';
+        var greyMessage = '<span style="color: LightGray;"></span>';
+        var changePlaceHolder = function($input, value) {
+            if ($input.html() === value) {
+                $input.html('');
+            }
+        }
+        $("#filter").html(greyFilter);
+        $("#myMessage").html(greyMessage);
+
+        $("#filter").keyup(function() {
+            changePlaceHolder($("#filter"), greyFilter);
+        });
+        $("#filter").click(function() {
+            changePlaceHolder($("#filter"), greyFilter);
+        });
+        $("#filter").bind('input', function() {
+            changePlaceHolder($("#filter"), greyFilter);
+        });
+        $("#filter").change(function() {
+            changePlaceHolder($("#filter"), greyFilter);
+        });
+        $("#filter").blur(function() {
+            if ($(this).text().length === 0) {
+                $("#filter").html(greyFilter);
+            }
+        });
+        $("#myMessage").keyup(function() {
+            changePlaceHolder($("#myMessage"), greyMessage);
+        });
+        $("#myMessage").click(function() {
+            changePlaceHolder($("#myMessage"), greyMessage);
+        });
+        $("#myMessage").bind('input', function() {
+            changePlaceHolder($("#myMessage"), greyMessage);
+        });
+        $("#myMessage").change(function() {
+            changePlaceHolder($("#myMessage"), greyMessage);
+        });
+        $("#myMessage").blur(function() {
+            if ($(this).text().length === 0) {
+                $("#myMessage").html(greyMessage);
+            }
+        });
+</script>
+    <script>
+    piAId='29622';
+    piCId='23596';
+    (function(){
+    function async_load(){
+    var s=document.createElement('script');s.type='text/javascript';
+    s.src=('https:'==document.location.protocol?'https://pi':'http://cdn')
+    +'.pardot.com/pd.js';
+    var c=document.getElementsByTagName('script')[0];
+    c.parentNode.insertBefore(s,c);}
+    if(window.attachEvent){window.attachEvent('onload',async_load);}
+    else{window.addEventListener('load',async_load,false);}})();
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create','UA-16927549-1');
+    ga('send','pageview');
+    </script>
+</body>
+
+</html>

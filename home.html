@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Videoweb RTC</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="google-site-verification" content="X-NyWbTQ-1CgZ7cvLZYPOc0BzO7PblJv201J3PJXAJI">
+</head>
+<body>
+<div id="wrapper">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="#">VideoWEB RTC</a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="defaultNavbar1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home.html">Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="demo.html" target="_blank">Secured Chat</a></li>
+        <li class="dropdown"><a href="#" class="dropdown-toggled" data-toggle="dropdown" role="button" aria-expanded="false">Online Users and Chatrooms<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+         <div class="iframe" id="iframe">
+         <iframe src="chat.html">
+         </iframe>
+         </div>
+          </ul>
+        </li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+      <?php include('_footer.php'); ?>
+    <a href="index.php?logout"> <button type="button" class="btn btn-info">Logout</button></a>
+    <a href="edit.php">
+    <button type="button" class="btn btn-warning">Edit Data</button></a>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<!-- Sidebar -->
+</div>
+    <!-- jQuery -->
+<script src="js/jquery2.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min2.js"></script>
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+            <!-- /#sidebar-wrapper -->
+
+<p align="center">
+<?php
+print("Welcome") ."  ". htmlspecialchars($_SESSION['user_name']) . "<br />";?></p>
+<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+<!-- My Phone Number & Dial Areas -->
+<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+
+<div class="container">
+<div class="row">
+        <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+        <!-- MY PHONE NUMBER -->
+        <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+<div class="number">
+            <div id="my-number-section" class="text-center">
+                <div id="my-number">LOADING</div>
+                <div id="my-number-title" class="hidden-sm hidden-xs">
+                    this is your phone number
+                </div>
+                <div id="my-number-permalink">
+                    <span class="glyphicon glyphicon-link"></span>
+                    call link:
+                    <a id="my-number-link" href="...">http://...</a>
+                </div>
+            </div>
+</div>
+
+        <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+        <!-- Video -->
+        <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+        <div class="mainvideo">
+            <!-- DISPLAY -->
+          <div class="rowvideo">
+              <div class="video2 text-center">
+                <div id="video-border">
+                        <div class="pubnub-relative">
+                            <div id="video-self"></div>
+                        </div>
+                        <div id="video-display">
+                            <span class="glyphicon glyphicon-flash"></span>
+                        </div>
+                    </div>
+               <div id="pubnub-relative">
+                      <div id="video-thumbnail"></div>
+                      <div id="pubnub-logo">
+                            <div id="pubnub-logo-img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div id="selfvideo">
+            <video id="gum-local" autoplay></video>
+    <div id="errorMsg"></div>
+    <script src="js/adapter.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/ga.js"></script></div>
+            <!-- DIAL CONTROLS -->
+          <div class="row">
+                <div class="col-xs-7 col-sm-4 col-sm-offset-2">
+                    <div class="form-group">
+                      <div class="input-group col-sm-12">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-th"></span>
+                    </div>
+                    <input id="number" class="form-control" type="number" placeholder="Recipient's #">
+                    </div></div>
+                </div>
+                <div class="col-xs-5 dial-buttons col-sm-4">
+                    <button id="dial" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-earphone"></span>
+                    </button>
+                    <button id="snap" class="btn btn-success">
+                        <span class="glyphicon glyphicon-camera"></span>
+                    </button>
+                    <button id="hangup" class="btn btn-danger">
+                        <span class="glyphicon glyphicon-ban-circle"></span>
+                    </button>                                        
+                </div>
+            </div>
+<div class="row"></div>
+        </div>
+        <div><div id="pubnub-chat-section" class="text-center">
+  <input id="pubnub-chat-input" type="text" placeholder="chat here">
+  <div id="pubnub-chat-output">
+    <div></div>
+  </div>
+</div></div>
+</body>&nbsp;</div>
+    </div>
+</div>
+
+
+<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+<!-- WebRTC Peer Connections -->
+<!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<!-- IMPORTANT: THIS IS AN UNMINIFIED DEVELOPMENT PUBNUB LIBRARY 
+    replace this with the latest versioned, minified CDN lib link before 
+    you deploy your app to a production enviornment.
+    https://github.com/pubnub/javascript#cdn-links
+-->
+<script src="https://cdn.pubnub.com/pubnub-dev.js"></script>
+<script src="js/webrtc.js"></script>
+<script src="js/sound.js"></script>
+<script>(function(){
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Generate Random Number if Needed
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+var urlargs         = urlparams();
+var my_number       = PUBNUB.$('my-number');
+var my_link         = PUBNUB.$('my-number-link');
+var number          = urlargs.number || Math.floor(Math.random()*999+1);
+
+my_number.number    = number;
+my_number.innerHTML = ''+my_number.number;
+my_link.href        = location.href.split('?')[0] + '?call=' + number;
+my_link.innerHTML   = my_link.href;
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Update Location if Not Set
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+if (!('number' in urlargs)) {
+    urlargs.number = my_number.number;
+    location.href = urlstring(urlargs);
+    return;
+}
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Get URL Params
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+function urlparams() {
+    var params = {};
+    if (location.href.indexOf('?') < 0) return params;
+
+    PUBNUB.each(
+        location.href.split('?')[1].split('&'),
+        function(data) { var d = data.split('='); params[d[0]] = d[1]; }
+    );
+
+    return params;
+}
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Construct URL Param String
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+function urlstring(params) {
+    return location.href.split('?')[0] + '?' + PUBNUB.map(
+        params, function( key, val) { return key + '=' + val }
+    ).join('&');
+}
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Calling & Answering Service
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+var video_out = PUBNUB.$('video-display');
+var img_out   = PUBNUB.$('video-thumbnail');
+var img_self  = PUBNUB.$('video-self');
+
+var phone     = window.phone = PHONE({
+    number        : my_number.number, // listen on this line
+    publish_key   : 'pub-c-561a7378-fa06-4c50-a331-5c0056d0163c',
+    subscribe_key : 'sub-c-17b7db8a-3915-11e4-9868-02ee2ddab7fe',
+    ssl           : true
+});
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Video Session Connected
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+function connected(session) {
+    video_out.innerHTML = '';
+    video_out.appendChild(session.video);
+
+    PUBNUB.$('number').value = ''+session.number;
+    sounds.play('sound/hi');
+    console.log("Hi!");
+}
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Video Session Ended
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+function ended(session) {
+    set_icon('facetime-video');
+    img_out.innerHTML = '';
+    sounds.play('sound/goodbye');
+    console.log("Bye!");
+}
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Video Session Ended
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+function set_icon(icon) {
+    video_out.innerHTML = '<span class="glyphicon glyphicon-' +
+        icon + '"></span>';
+}
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Request fresh TURN servers from XirSys
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+function get_xirsys_servers() {
+    var servers;
+    $.ajax({
+        type: 'POST',
+        url: 'https://api.xirsys.com/getIceServers',
+        data: {
+            room: 'default',
+            application: 'default',
+            domain: 'www.pubnub-example.com',
+            ident: 'pubnub',
+            secret: 'dec77661-9b0e-4b19-90d7-3bc3877e64ce',
+        },
+        success: function(res) {
+            res = JSON.parse(res);
+            if (!res.e) servers = res.d.iceServers;
+        },
+        async: false
+    });
+    return servers;
+}
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Start Phone Call
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+function dial(number) {
+    // Dial Number
+    var session = phone.dial(number, get_xirsys_servers());
+
+    // No Dupelicate Dialing Allowed
+    if (!session) return;
+
+    // Show Connecting Status
+    set_icon('send');
+}
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Ready to Send or Receive Calls
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+phone.ready(function(){
+    // Ready To Call
+    set_icon('facetime-video');
+
+    // Auto Call
+    if ('call' in urlargs) {
+        var number = urlargs['call'];
+        PUBNUB.$('number').value = number;
+        dial(number);
+    }
+
+    // Make a Phone Call
+    PUBNUB.bind( 'mousedown,touchstart', PUBNUB.$('dial'), function(){
+        var number = PUBNUB.$('number').value;
+        if (!number) return;
+        dial(number);
+    } );
+
+    // Hanup Call
+    PUBNUB.bind( 'mousedown,touchstart', PUBNUB.$('hangup'), function() {
+        phone.hangup();
+        set_icon('facetime-video');
+    } );
+
+    // Take Picture
+    PUBNUB.bind( 'mousedown,touchstart', PUBNUB.$('snap'), function() {
+        var photo = phone.snap();
+        img_self.innerHTML = ' ';
+        img_self.appendChild(photo.image);
+        setTimeout( function() { img_self.innerHTML = ' ' }, 99999 );
+    } );
+});
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Received Call Thumbnail
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+function thumbnail(session) {
+    img_out.innerHTML = '';
+    img_out.appendChild(session.image);
+    img_out.appendChild(phone.snap().image);
+}
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Receiver for Calls
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+phone.receive(function(session){
+    session.message(message);
+    session.thumbnail(thumbnail);
+    session.connected(connected);
+    session.ended(ended);
+});
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Chat
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+var chat_in  = PUBNUB.$('pubnub-chat-input');
+var chat_out = PUBNUB.$('pubnub-chat-output');
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Send Chat MSG and update UI for Sending Messages
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+PUBNUB.bind( 'keydown', chat_in, function(e) {
+    if ((e.keyCode || e.charCode) !== 13)     return true;
+    if (!chat_in.value.replace( /\s+/g, '' )) return true;
+
+    phone.send({ text : chat_in.value });
+    add_chat( my_number.number + " (Me)", chat_in.value );
+    chat_in.value = '';
+} )
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Update Local GUI
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+function add_chat( number, text ) {
+    if (!text.replace( /\s+/g, '' )) return true;
+
+    var newchat       = document.createElement('div');
+    newchat.innerHTML = PUBNUB.supplant(
+        '<strong>{number}: </strong> {message}', {
+        message : safetxt(text),
+        number  : safetxt(number)
+    } );
+    chat_out.insertBefore( newchat, chat_out.firstChild );
+}
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// WebRTC Message Callback
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+function message( session, message ) {
+    add_chat( session.number, message.text );
+}
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// XSS Prevent
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+function safetxt(text) {
+    return (''+text).replace( /[<>]/g, '' );
+}
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Problem Occured During Init
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+phone.unable(function(details){
+    console.log("Alert! - Reload Page.");
+    console.log(details);
+    set_icon('remove');
+});
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+// Debug Output
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+phone.debug(function(details){
+     // console.log(details);
+});
+
+})();</script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<div class='panel panel-default panel-primary' ng-hide='selectedChannel'>
+<div class='panel-heading'>
+<h3 class='panel-title'>First Join Chat to See Online Users</h3>
+</div>
+<form class='panel-body'>
+<ul class='list-unstyled'>
+<li>
+<label>
+Username
+</label>
+</li>
+<li>
+<input class='input-lg form-control' maxlength='20' ng-model='data.username' size='20' type='text'>
+</li>
+</ul>
+<ul class='list-unstyled'>
+<li>
+<label>
+City
+</label>
+</li>
+<li>
+<input class='input-lg form-control' maxlength='20' ng-model='data.city' size='20' type='text'>
+</li>
+</ul>
+<ul class='list-unstyled'>
+<li>
+<label>
+<input class='checkbox-inline input-lg' ng-model='data.super' type='checkbox'>
+Log in with super powers?
+</label>
+</li>
+</ul>
+<ul class='list-unstyled'>
+<li>
+<input class='btn btn-block btn-primary' ng-click='join()' type='submit' value='Join'>
+</li>
+</ul>
+</form>
+</div>
+</div>
+</div>
+</div>
