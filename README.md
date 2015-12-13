@@ -5,3 +5,5 @@ Copy all files onto the server and edit config.php file in config folder with th
 create database named videowe3_ajinkya and execute .sql file
 
 In config.php replace the URL in the file 
+
+Need SSL to execute the project
