@@ -1,4 +1,5 @@
 WebRTC Simple Video Calling using Open Source PUBNUB SDK
+===========================================================
 
 Copy all files onto the server and edit config.php file in config folder with the mysql username and password
 
@@ -8,7 +9,8 @@ In config.php replace the URL in the file
 
 Need SSL to execute the project
 
-Steps to Install Project
+Steps to Install the Project
+========================
 
 1)	Download and Install with administrator permissions XAMPP server from the link for Windows Linux or OSX https://www.apachefriends.org/index.html
 
