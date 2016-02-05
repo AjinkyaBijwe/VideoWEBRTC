@@ -52,4 +52,5 @@ Note: Chrome may not allow site to open “Your connection is not private” so 
 ![alt tag](https://www.dropbox.com/s/zewcxtw14a4zx2c/OnlineUsers_and%20Chatrooms.jpg?dl=0)
 ![alt tag](https://www.dropbox.com/s/5zo9h4b8hhrk61q/Call_Ongoing.jpg?dl=0)
 ![alt tag](https://www.dropbox.com/s/6w0u2a0s2puzbfn/EditData_Page.jpg?dl=0)
-![alt tag](https://www.dropbox.com/s/6w0u2a0s2puzbfn/EditData_Page.jpg?dl=0)
+![alt tag](https://www.dropbox.com/s/s1btcv9u2d68kr6/Password_Reset.jpg?dl=0)
+![alt tag](https://www.dropbox.com/s/zr3tcipqkhg2n3p/Rename.jpg?dl=0)
