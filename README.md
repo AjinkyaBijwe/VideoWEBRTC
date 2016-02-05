@@ -44,13 +44,3 @@ Note: Chrome may not allow site to open “Your connection is not private” so 
 
 13)	Open “Secure Chat” from the Menu Bar and Login using suitable username
 
-![alt tag](http://www.dropbox.com/s/vl28kc4ltdlrkd8/Signup_Page.jpg?dl=0)
-![alt tag](http://www.dropbox.com/s/qcnlrxx0a57cgux/LoginPage.jpg?dl=0)
-![alt tag](http://www.dropbox.com/s/zr3tcipqkhg2n3p/Rename.jpg?dl=0)
-![alt tag](http://www.dropbox.com/s/etnmi6um8jlwu7c/Main_Interface.png?dl=0)
-![alt tag](http://www.dropbox.com/s/gpfxjcsutd026ek/Login_Chat.jpg?dl=0)
-![alt tag](http://www.dropbox.com/s/zewcxtw14a4zx2c/OnlineUsers_and%20Chatrooms.jpg?dl=0)
-![alt tag](http://www.dropbox.com/s/5zo9h4b8hhrk61q/Call_Ongoing.jpg?dl=0)
-![alt tag](http://www.dropbox.com/s/6w0u2a0s2puzbfn/EditData_Page.jpg?dl=0)
-![alt tag](http://www.dropbox.com/s/s1btcv9u2d68kr6/Password_Reset.jpg?dl=0)
-![alt tag](http://www.dropbox.com/s/zr3tcipqkhg2n3p/Rename.jpg?dl=0)
