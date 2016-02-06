@@ -43,5 +43,3 @@ Note: Chrome may not allow site to open “Your connection is not private” so 
 12)	Share the generated number top other user or just open Incognito tab of  and copy paste generated URL and call the number the call should be connected
 
 13)	Open “Secure Chat” from the Menu Bar and Login using suitable username
-
-![login](https://www.dropbox.com/s/uqusnbstbwd9ovz/LoginPage.png?dl=0)
