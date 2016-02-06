@@ -46,7 +46,7 @@ Note: Chrome may not allow site to open “Your connection is not private” so 
 
 ![signup_page](https://cloud.githubusercontent.com/assets/8812357/12862608/db01b39a-cc21-11e5-91c9-ac4daa07d7d3.png)
 ![loginpage](https://cloud.githubusercontent.com/assets/8812357/12862603/daefdff8-cc21-11e5-8389-f6982259141b.png)
-![main_interface](https://cloud.githubusercontent.com/assets/8812357/12862600/daef83dc-cc21-11e5-901b-868d324399d5.png)
+![main_interface](![main_interface](https://cloud.githubusercontent.com/assets/8812357/12862673/737b3056-cc22-11e5-8b15-3be98cfb75cc.jpg)
 ![login_chat](https://cloud.githubusercontent.com/assets/8812357/12862601/daef8814-cc21-11e5-9154-11318d078dfe.png)
 ![onlineusers_and chatrooms](https://cloud.githubusercontent.com/assets/8812357/12862602/daef9976-cc21-11e5-836c-cb0903e2db86.png)
 ![call_ongoing](https://cloud.githubusercontent.com/assets/8812357/12862598/daec1ca6-cc21-11e5-8fc4-50fb3bd47c57.png)
