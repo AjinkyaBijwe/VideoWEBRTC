@@ -43,14 +43,14 @@ Note: Chrome may not allow site to open “Your connection is not private” so 
 12)	Share the generated number top other user or just open Incognito tab of  and copy paste generated URL and call the number the call should be connected
 
 13)	Open “Secure Chat” from the Menu Bar and Login using suitable username
-
-![call_ongoing](https://cloud.githubusercontent.com/assets/8812357/12862598/daec1ca6-cc21-11e5-8fc4-50fb3bd47c57.png)
-![editdata_page](https://cloud.githubusercontent.com/assets/8812357/12862599/daed698a-cc21-11e5-93b5-3586e21faebc.png)
-![login_chat](https://cloud.githubusercontent.com/assets/8812357/12862601/daef8814-cc21-11e5-9154-11318d078dfe.png)
+![signup_page](https://cloud.githubusercontent.com/assets/8812357/12862608/db01b39a-cc21-11e5-91c9-ac4daa07d7d3.png)
 ![loginpage](https://cloud.githubusercontent.com/assets/8812357/12862603/daefdff8-cc21-11e5-8389-f6982259141b.png)
 ![main_interface](https://cloud.githubusercontent.com/assets/8812357/12862600/daef83dc-cc21-11e5-901b-868d324399d5.png)
+![login_chat](https://cloud.githubusercontent.com/assets/8812357/12862601/daef8814-cc21-11e5-9154-11318d078dfe.png)
 ![onlineusers_and chatrooms](https://cloud.githubusercontent.com/assets/8812357/12862602/daef9976-cc21-11e5-836c-cb0903e2db86.png)
+![call_ongoing](https://cloud.githubusercontent.com/assets/8812357/12862598/daec1ca6-cc21-11e5-8fc4-50fb3bd47c57.png)
+![secured_chat](https://cloud.githubusercontent.com/assets/8812357/12862607/db013afa-cc21-11e5-9ba3-ca1ece19bd58.png)
+![editdata_page](https://cloud.githubusercontent.com/assets/8812357/12862599/daed698a-cc21-11e5-93b5-3586e21faebc.png)
 ![password_reset](https://cloud.githubusercontent.com/assets/8812357/12862605/dafb3556-cc21-11e5-91bf-3cede0b69435.png)
 ![rename](https://cloud.githubusercontent.com/assets/8812357/12862606/daff2c10-cc21-11e5-97ef-1dfd65e93a3c.png)
-![secured_chat](https://cloud.githubusercontent.com/assets/8812357/12862607/db013afa-cc21-11e5-9ba3-ca1ece19bd58.png)
-![signup_page](https://cloud.githubusercontent.com/assets/8812357/12862608/db01b39a-cc21-11e5-91c9-ac4daa07d7d3.png)
+
