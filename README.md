@@ -80,7 +80,3 @@ Password Reset
 ---------------
 ![password_reset](https://cloud.githubusercontent.com/assets/8812357/12862605/dafb3556-cc21-11e5-91bf-3cede0b69435.png)
 
-Rename Page
---------------
-![rename](https://cloud.githubusercontent.com/assets/8812357/12862606/daff2c10-cc21-11e5-97ef-1dfd65e93a3c.png)
-
