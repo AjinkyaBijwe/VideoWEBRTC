@@ -1,6 +1,8 @@
 WebRTC Simple Video Calling using Open Source PUBNUB SDK
 ===========================================================
 
+### Note : This Project is Archived. New Project Similar to VideoWECRTC is Uploaded here https://github.com/AjinkyaBijwe/WebRTCVideoCall
+
 Copy all files onto the server and edit config.php file in config folder with the mysql username and password
 
 create database named videowe3_ajinkya and execute .sql file
